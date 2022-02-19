@@ -76,7 +76,6 @@ function App() {
         <></>
       )}
       <h3>Points: {points}</h3>
-
     </div>
   )
 }
