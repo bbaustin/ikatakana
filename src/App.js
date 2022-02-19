@@ -23,8 +23,13 @@ function App() {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      console.log('Hey there')
+      // TODO
     }
+  }
+
+  const skip = (event) => {
+    setPoints(0)
+    randomizeWord()
   }
 
   useEffect(() => {
@@ -55,6 +60,9 @@ function App() {
         <>
           <SecretWord randomizedWord={randomizedWord.word[0].japanese} />
           <TextBar value={value} handleChange={handleChange} />
+          <div className="button" onClick={skip}>
+            Skip
+          </div>
         </>
       ) : (
         <></>
@@ -68,6 +76,7 @@ function App() {
         <></>
       )}
       <h3>Points: {points}</h3>
+
     </div>
   )
 }
