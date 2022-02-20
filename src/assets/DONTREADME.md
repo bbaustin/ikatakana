@@ -6,4 +6,10 @@
 - expand katakana list. look into way of automizing upload
 - create alternate game with matching the definition
   - with this, get definition to be an array (which would cause changes elsewhere)
-- give up button (restart points)
+- avoid duplicates
+  - should probably use Set
+- start a fresh git repo
+
+
+
+- DONE give up button (restart points)

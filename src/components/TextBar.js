@@ -8,6 +8,7 @@ const TextBar = (props) => {
       className='midlength'
       value={props.value}
       onChange={props.handleChange}
+      autoFocus
     ></input>
   )
 }

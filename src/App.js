@@ -21,13 +21,13 @@ function App() {
     setPoints(points + 1)
   }
 
-  const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      // TODO
+  document.onkeydown = (event) => {
+    if (displayed === DISPLAY_OPTIONS[1] && event.key == 'Enter') {
+      randomizeWord()
     }
   }
 
-  const skip = (event) => {
+  const skip = () => {
     setPoints(0)
     randomizeWord()
   }
@@ -55,11 +55,11 @@ function App() {
   }
 
   return (
-    <div className='App' onKeyDown={handleKeyDown}>
+    <div className='App'>
       {randomizedWord && displayed === 'RANDOM_WORD' ? (
         <>
           <SecretWord randomizedWord={randomizedWord.word[0].japanese} />
-          <TextBar value={value} handleChange={handleChange} />
+          <TextBar className="textBar" value={value} handleChange={handleChange} />
           <div className="button" onClick={skip}>
             Skip
           </div>
