@@ -3,6 +3,7 @@ import React from 'react'
 const InfoWidget = (props) => {
   return (
     <div className='widget info-widget'>
+      <div className="button top-right" onClick={props.toggleTrueFalse}>x</div>
 
       <p>For general katakana, please input the matching Roman letter(s). Examples:</p>
       <ul>
@@ -55,4 +56,4 @@ const InfoWidget = (props) => {
   )
 }
 
-export default Keyboard
+export default InfoWidget

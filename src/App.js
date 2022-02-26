@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import SecretWord from './components/SecretWord'
 import SecretWordFeedback from './components/SecretWordFeedback'
 import TextBar from './components/TextBar'
+import InfoWidget from './components/InfoWidget'
 import word_list from './assets/word_list.json'
 import { DISPLAY_OPTIONS } from './assets/constants.js'
 
@@ -9,6 +10,7 @@ function App() {
   const [value, setValue] = useState()
   const [randomizedWord, setRandomizedWord] = useState()
   const [points, setPoints] = useState(0)
+  const [visibleInfoWidget, setVisibleInfoWidget] = useState(false)
   const [displayed, setDisplayed] = useState(DISPLAY_OPTIONS[0])
 
   const randomizeWord = () => {
@@ -22,7 +24,7 @@ function App() {
   }
 
   document.onkeydown = (event) => {
-    if (displayed === DISPLAY_OPTIONS[1] && event.key == 'Enter') {
+    if (displayed === DISPLAY_OPTIONS[1] && event.key === 'Enter') {
       randomizeWord()
     }
   }
@@ -54,6 +56,15 @@ function App() {
     setValue(event.target.value)
   }
 
+  const toggleTrueFalse = () => {
+    if (visibleInfoWidget) {
+      setVisibleInfoWidget(false)
+    } 
+    else {
+      setVisibleInfoWidget(true)
+    }
+  }
+
   return (
     <div className='App'>
       {randomizedWord && displayed === 'RANDOM_WORD' ? (
@@ -75,7 +86,12 @@ function App() {
       ) : (
         <></>
       )}
+      <div className="button" onClick={() => setVisibleInfoWidget(true)}>?</div>
       <h3>Points: {points}</h3>
+
+      {visibleInfoWidget ? 
+        <InfoWidget toggleTrueFalse={toggleTrueFalse}/>
+      : null }
     </div>
   )
 }
