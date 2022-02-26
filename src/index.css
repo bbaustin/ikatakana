@@ -19,6 +19,11 @@ input {
   margin: 0 auto 50px auto;
 }
 
+input.secret {
+  margin: 0;
+  opacity: 0;
+}
+
 .keyboard {
   border-left: 1px solid var(--blue);
   border-bottom: 1px solid var(--blue);

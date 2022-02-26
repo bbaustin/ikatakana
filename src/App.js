@@ -14,17 +14,17 @@ function App() {
   const [displayed, setDisplayed] = useState(DISPLAY_OPTIONS[0])
 
   const randomizeWord = () => {
+    setDisplayed(DISPLAY_OPTIONS[0])
     let randomNumber = Math.floor(Math.random() * word_list.length)
     setRandomizedWord(word_list[randomNumber])
-    setDisplayed(DISPLAY_OPTIONS[0])
   }
 
   const increasePoints = () => {
     setPoints(points + 1)
   }
 
-  document.onkeydown = (event) => {
-    if (displayed === DISPLAY_OPTIONS[1] && event.key === 'Enter') {
+  const handleEnter = (event) => {
+    if (event.key === 'Enter' && displayed === DISPLAY_OPTIONS[1]) {
       randomizeWord()
     }
   }
@@ -39,7 +39,7 @@ function App() {
   }, [])
 
   const compareText = (inputText, randomWord) => {
-    if (inputText === randomWord) {
+    if (inputText === randomWord && displayed === DISPLAY_OPTIONS[0]) {
       increasePoints()
       setValue('')
       setDisplayed(DISPLAY_OPTIONS[1])
@@ -47,7 +47,7 @@ function App() {
   }
 
   useEffect(() => {
-    if (randomizedWord) {
+    if (randomizedWord && displayed === DISPLAY_OPTIONS[0]) {
       compareText(value, randomizedWord.word[0].romaji)
     }
   })
@@ -58,11 +58,9 @@ function App() {
 
   const toggleTrueFalse = () => {
     if (visibleInfoWidget) {
-      setVisibleInfoWidget(false)
-    } 
-    else {
-      setVisibleInfoWidget(true)
+      return setVisibleInfoWidget(false)
     }
+    setVisibleInfoWidget(true)
   }
 
   return (
@@ -70,8 +68,12 @@ function App() {
       {randomizedWord && displayed === 'RANDOM_WORD' ? (
         <>
           <SecretWord randomizedWord={randomizedWord.word[0].japanese} />
-          <TextBar className="textBar" value={value} handleChange={handleChange} />
-          <div className="button" onClick={skip}>
+          <TextBar
+            className='textBar'
+            value={value}
+            handleChange={handleChange}
+          />
+          <div className='button' onClick={skip}>
             Skip
           </div>
         </>
@@ -82,16 +84,19 @@ function App() {
         <SecretWordFeedback
           randomizedWord={randomizedWord}
           randomizeWord={randomizeWord}
+          handleEnter={handleEnter}
         />
       ) : (
         <></>
       )}
-      <div className="button" onClick={() => setVisibleInfoWidget(true)}>?</div>
+      <div className='button' onClick={() => setVisibleInfoWidget(true)}>
+        ?
+      </div>
       <h3>Points: {points}</h3>
 
-      {visibleInfoWidget ? 
-        <InfoWidget toggleTrueFalse={toggleTrueFalse}/>
-      : null }
+      {visibleInfoWidget ? (
+        <InfoWidget toggleTrueFalse={toggleTrueFalse} />
+      ) : null}
     </div>
   )
 }

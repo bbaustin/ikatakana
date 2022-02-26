@@ -33,7 +33,7 @@ const InfoWidget = (props) => {
         <li>ティ = ti</li>
       </ul>
       
-      <p> <span class="important">EXCEPTION!</span> If the preceding character is a "vowel" character, please include both characters' sounds. This often happens with "ウ" sounds. Examples:</p>
+      <p> <span className="important">EXCEPTION!</span> If the preceding character is a "vowel" character, please include both characters' sounds. This often happens with "ウ" sounds. Examples:</p>
       <ul>
         <li>ハロウィン = harouin (Halloween)</li>
         <li>ウィル = uiru (Will)</li>

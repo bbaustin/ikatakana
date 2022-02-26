@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const SecretWordFeedback = (props) => {
   return (
@@ -12,6 +12,13 @@ const SecretWordFeedback = (props) => {
           <div className='button' onClick={props.randomizeWord}>
             オーケー！
           </div>
+          <input
+            autoFocus
+            className='secret'
+            onBlur={({ target }) => target.focus()}
+            onKeyDown={props.handleEnter}
+            tabIndex={-1}
+          ></input>
         </div>
       ) : (
         <h1>Loading...</h1>
