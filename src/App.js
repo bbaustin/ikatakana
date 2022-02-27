@@ -73,7 +73,7 @@ function App() {
             value={value}
             handleChange={handleChange}
           />
-          <div className='button' onClick={skip}>
+          <div className='button notice' onClick={skip}>
             Skip
           </div>
         </>
@@ -89,10 +89,13 @@ function App() {
       ) : (
         <></>
       )}
-      <div className='button' onClick={() => setVisibleInfoWidget(true)}>
+      <div
+        className='button info mini'
+        onClick={() => setVisibleInfoWidget(true)}
+      >
         ?
       </div>
-      <h3>Points: {points}</h3>
+      <h3>Combo: {points}</h3>
 
       {visibleInfoWidget ? (
         <InfoWidget toggleTrueFalse={toggleTrueFalse} />

@@ -4,11 +4,11 @@ const SecretWordFeedback = (props) => {
   return (
     <div className='secret-word'>
       {props.randomizedWord ? (
-        <div>
+        <div className='feedback'>
           <h1>{props.randomizedWord.word[0].japanese}</h1>
-          <h3>{props.randomizedWord.word[0].romaji}</h3>
-          <h3>{props.randomizedWord.word[0].english_meaning}</h3>
-          <p>{props.randomizedWord.info}</p>
+          <h2>{props.randomizedWord.word[0].romaji}</h2>
+          <h2>{props.randomizedWord.word[0].english_meaning}</h2>
+          <p className='definition'>{props.randomizedWord.info}</p>
           <div className='button' onClick={props.randomizeWord}>
             オーケー！
           </div>

@@ -1,25 +1,58 @@
 :root {
   --blue: #123bbb;
-  --pink: #fab2b3;
-  --purple: #666bbb;
+  --green: #00c06a;
+  --red: #f01818;
+}
+
+.App,
+.feedback {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   color: var(--blue);
   display: flex;
   font-family: sans-serif;
+  font-weight: 300;
   justify-content: center;
 }
 
 h1 {
-  color: var(--blue);
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+p.definition {
+  margin: 15px 30px 40px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  p.definition {
+    width: 50%;
+  }
 }
 
 input {
+  border: 2px solid var(--blue);
+  border-radius: 0;
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: 300;
+  height: 40px;
   margin: 0 auto 50px auto;
+  padding: 5px 15px;
 }
 
 input.secret {
+  height: 0px;
   margin: 0;
   opacity: 0;
 }
@@ -44,13 +77,45 @@ input.secret {
 .button {
   align-items: center;
   cursor: pointer;
-  border: 1px solid var(--blue);
+  border: 2px solid var(--blue);
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   padding: 10px 0px;
+  width: 50%;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+}
+
+.widget {
+  background: white;
+  border: 2px solid var(--blue);
+  box-shadow: 8px 22px 0px 8px;
+  left: 0;
+  margin: 30px;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  width: 63%;
+  z-index: 3;
+}
+
+.mini {
+  width: 35px;
+}
+
+.top-right {
+  float: right;
+}
+
+.notice {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
+.info {
+  border: 2px solid var(--green);
+  color: var(--green);
 }
