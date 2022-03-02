@@ -9,6 +9,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 0 25px;
 }
 
 body {
@@ -27,11 +28,27 @@ h1 {
 
 h2 {
   font-weight: 300;
-  margin: 0;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    width: 75%;
+  }
+}
+
+h2.romaji {
+  font-style: italic;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 p.definition {
   margin: 15px 30px 40px 30px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,14 +109,18 @@ input.secret {
 .widget {
   background: white;
   border: 2px solid var(--blue);
-  box-shadow: 8px 22px 0px 8px;
-  left: 0;
+  box-shadow: 20px 20px 0px 0px;
   margin: 30px;
   padding: 30px;
   position: absolute;
-  top: 0;
   width: 63%;
   z-index: 3;
+}
+
+.spacer {
+  background: transparent;
+  height: 80px;
+  margin: 0 0 -101px 0;
 }
 
 .mini {
@@ -118,4 +139,26 @@ input.secret {
 .info {
   border: 2px solid var(--green);
   color: var(--green);
+}
+
+span.info {
+  border: none;
+}
+
+footer {
+  align-items: center;
+  border-top: 1px solid var(--blue);
+  bottom: 0;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-around;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px 0px;
+  width: 30%;
 }

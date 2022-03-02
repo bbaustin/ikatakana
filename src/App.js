@@ -3,6 +3,7 @@ import SecretWord from './components/SecretWord'
 import SecretWordFeedback from './components/SecretWordFeedback'
 import TextBar from './components/TextBar'
 import InfoWidget from './components/InfoWidget'
+import Footer from './components/Footer'
 import word_list from './assets/word_list.json'
 import { DISPLAY_OPTIONS } from './assets/constants.js'
 
@@ -96,6 +97,7 @@ function App() {
         ?
       </div>
       <h3>Combo: {points}</h3>
+      <Footer />
 
       {visibleInfoWidget ? (
         <InfoWidget toggleTrueFalse={toggleTrueFalse} />

@@ -53,9 +53,9 @@ const InfoWidget = (props) => {
 
       <p>
         {' '}
-        <span className='important'>EXCEPTION!</span> If the preceding character
-        is a "vowel" character, please include both characters' sounds. This
-        often happens with "ウ" sounds. Examples:
+        <span className='info'>EXCEPTION!</span> If the preceding character is a
+        "vowel" character, please include both characters' sounds. This often
+        happens with "ウ" sounds. Examples:
       </p>
       <ul>
         <li>ハロウィン = harouin (Halloween)</li>
@@ -75,8 +75,14 @@ const InfoWidget = (props) => {
 
       <p>Other considerations:</p>
       <ul>
-        <li>ヴァ = vya</li>
+        <li>ヴ = v</li>
+        <li>
+          If you see ・, please disregard it. For example,{' '}
+          <span className='info'>イン・キー = inkii</span>
+        </li>
       </ul>
+
+      <div className='spacer'></div>
     </div>
   )
 }

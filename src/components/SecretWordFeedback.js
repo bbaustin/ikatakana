@@ -6,7 +6,7 @@ const SecretWordFeedback = (props) => {
       {props.randomizedWord ? (
         <div className='feedback'>
           <h1>{props.randomizedWord.word[0].japanese}</h1>
-          <h2>{props.randomizedWord.word[0].romaji}</h2>
+          <h2 className='romaji'>{props.randomizedWord.word[0].romaji}</h2>
           <h2>{props.randomizedWord.word[0].english_meaning}</h2>
           <p className='definition'>{props.randomizedWord.info}</p>
           <div className='button' onClick={props.randomizeWord}>
