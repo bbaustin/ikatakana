@@ -32,7 +32,8 @@ function App() {
 
   const skip = () => {
     setPoints(0)
-    randomizeWord()
+    setDisplayed(DISPLAY_OPTIONS[1])
+    setValue('')
   }
 
   useEffect(() => {
@@ -54,7 +55,7 @@ function App() {
   })
 
   const handleChange = (event) => {
-    setValue(event.target.value)
+    setValue(event.target.value.toLowerCase())
   }
 
   const toggleTrueFalse = () => {

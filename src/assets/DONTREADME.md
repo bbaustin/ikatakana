@@ -1,19 +1,22 @@
 - UP NEXT:
 
-* case insensitive (just use JS)
-* skip should reset the input and bring you to info screen (not new word)
 * post on github.io etc
+* better handling of return button on feedback page
 
 - FINISHED:
 
   - give up button (restart points)
+    - skip should reset the input and bring you to info screen (not new word)
   - make enter submit the "OK" button (forced focus arguably not great)
   - make UI friendlier (for now)
   - expand katakana list. look into way of automizing upload
   - favicon
+  - case insensitive (just use JS)
+  - add padding to bottom of help component
 
 - BACKLOG:
 
+* animation for correct
 * add countries to vocab
 * avoid seeing the same vocab twice
   - should probably use Set
@@ -22,5 +25,3 @@
 * create alternate game with matching the definition
   - with this, get definition to be an array (which would cause changes elsewhere)
 * start a fresh git repo
-* give a better explanation
-* add padding to bottom of help component

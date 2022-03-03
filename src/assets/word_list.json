@@ -448,10 +448,10 @@
       {
         "japanese": "アフレコ",
         "romaji": "afureko",
-        "english_meaning": "af(ter) + recor(ding): postrecording, dubbing"
+        "english_meaning": "postrecording, dubbing"
       }
     ],
-    "info": "From English",
+    "info": "From English, af(ter) + recor(ding)",
     "link": "",
     "related_words": []
   },
@@ -1096,7 +1096,7 @@
     "word": [
       {
         "japanese": "ダストシュート",
-        "romaji": "dasutoshuuto",
+        "romaji": "dasutoshyuuto",
         "english_meaning": "garbage chute"
       }
     ],
@@ -1157,10 +1157,10 @@
       {
         "japanese": "デスク",
         "romaji": "desuku",
-        "english_meaning": "an editor for a certain section of a publication. (Derived from desk's meaning as a division of specialization in a newsroom, e.g., 'the sports desk'.) Also, a desk."
+        "english_meaning": "an editor for a certain section of a publication. Also, a desk."
       }
     ],
-    "info": "From English",
+    "info": "From English. First meaning is derived from desk's meaning as a division of specialization in a newsroom, e.g., 'the sports desk'.",
     "link": "",
     "related_words": []
   },
@@ -1948,11 +1948,11 @@
     "word": [
       {
         "japanese": "ヘルスメーター",
-        "romaji": "herusu",
-        "english_meaning": "meetaa health meter bathroom scales, scales"
+        "romaji": "herusumeetaa",
+        "english_meaning": "(bathroom) scale"
       }
     ],
-    "info": "From English",
+    "info": "From English, 'health meter'",
     "link": "",
     "related_words": []
   },
@@ -2152,7 +2152,7 @@
     "word": [
       {
         "japanese": "ジャンパー",
-        "romaji": "janpaa",
+        "romaji": "jyanpaa",
         "english_meaning": "jumper jacket, jumper (ski jumping athlete)"
       }
     ],
@@ -2164,7 +2164,7 @@
     "word": [
       {
         "japanese": "ジャンプ",
-        "romaji": "janpu",
+        "romaji": "jyanpu",
         "english_meaning": "jump"
       }
     ],
@@ -2380,7 +2380,7 @@
     "word": [
       {
         "japanese": "カシューナッツ",
-        "romaji": "kashuunattsu",
+        "romaji": "kashyuunattsu",
         "english_meaning": "cashew"
       }
     ],
@@ -3233,10 +3233,10 @@
       {
         "japanese": "ノルマ",
         "romaji": "noruma",
-        "english_meaning": "норма (norma, meaning 'standard; norm') quota, minimum requirement (tasks)"
+        "english_meaning": "quota, minimum requirement"
       }
     ],
-    "info": "From Russian",
+    "info": "From Russian, норма (norma, meaning 'standard; norm')",
     "link": "",
     "related_words": []
   },
@@ -3905,7 +3905,7 @@
       {
         "japanese": "ライブアクション",
         "romaji": "raibuakushyon",
-        "english_meaning": "animated or comic form stories made into TV shows/movies involving real actors. It's the opposite of komikarizu"
+        "english_meaning": "adapting a manga or anime into a TV show/movie featuring real actors. The opposite of コミカライズ"
       }
     ],
     "info": "From English, live-action",
@@ -4491,12 +4491,12 @@
   {
     "word": [
       {
-        "japanese": "シュラーフ",
-        "romaji": "/",
-        "english_meaning": "シュラーフザック shuraafu / shuraafuzakku Schlaf / Schlafsack sleeping bag"
+        "japanese": "シュラーフザック",
+        "romaji": "shyuraafuzakku",
+        "english_meaning": "sleeping bag, especially one used in camping"
       }
     ],
-    "info": "From German",
+    "info": "From German, Schlafsack",
     "link": "",
     "related_words": []
   },
