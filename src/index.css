@@ -147,6 +147,7 @@ span.info {
 
 footer {
   align-items: center;
+  background: white;
   border-top: 1px solid var(--blue);
   bottom: 0;
   display: flex;
@@ -161,4 +162,26 @@ footer p {
   margin: 0;
   padding: 15px 0px;
   width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+    margin: 10px auto;
+  }
+  input {
+    margin: 0 auto 15px auto;
+  }
+  .button {
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  p.definition {
+    margin: 5px 30px 15px 30px;
+  }
+  p.definition + .button {
+    margin-bottom: 0;
+  }
 }

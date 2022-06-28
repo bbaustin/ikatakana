@@ -855,8 +855,8 @@
     "word": [
       {
         "japanese": "ビジネスホテル",
-        "romaji": "bijinesu",
-        "english_meaning": "hoteru business hotel budget hotel"
+        "romaji": "bijinesu hoteru",
+        "english_meaning": "business hotel, budget hotel"
       }
     ],
     "info": "From English",
@@ -1973,7 +1973,7 @@
       {
         "japanese": "ホルモン",
         "romaji": "horumon",
-        "english_meaning": "a cut of meat common in yakiniku or hotpot"
+        "english_meaning": "pig or cow intestine; a cut of meat common in yakiniku or hotpot"
       }
     ],
     "info": "From German, Hormon",
@@ -3136,8 +3136,8 @@
     "word": [
       {
         "japanese": "ナンバーディスプレイ",
-        "romaji": "nanbaa",
-        "english_meaning": "disupurei number display caller ID"
+        "romaji": "nanbaadisupurei",
+        "english_meaning": "number display caller ID"
       }
     ],
     "info": "From English",

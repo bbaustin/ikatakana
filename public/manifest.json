@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://hereismy.website/ikatakana",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#f01818",
   "background_color": "#ffffff"
 }

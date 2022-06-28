@@ -1,10 +1,11 @@
 - UP NEXT:
 
-* post on github.io etc
-* better handling of return button on feedback page
+* make footer background white
+* mobile keyboard will smoosh the view. Make sure all inputs are visible on mobile
 
 - FINISHED:
 
+  - post on github.io etc
   - give up button (restart points)
     - skip should reset the input and bring you to info screen (not new word)
   - make enter submit the "OK" button (forced focus arguably not great)
@@ -16,6 +17,7 @@
 
 - BACKLOG:
 
+* better handling of return button on feedback page
 * animation for correct
 * add countries to vocab
 * avoid seeing the same vocab twice
