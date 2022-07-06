@@ -67,37 +67,39 @@ function App() {
 
   return (
     <div className='App'>
-      {randomizedWord && displayed === 'RANDOM_WORD' ? (
-        <>
-          <SecretWord randomizedWord={randomizedWord.word[0].japanese} />
-          <TextBar
-            className='textBar'
-            value={value}
-            handleChange={handleChange}
+      <main>
+        {randomizedWord && displayed === 'RANDOM_WORD' ? (
+          <>
+            <SecretWord randomizedWord={randomizedWord.word[0].japanese} />
+            <TextBar
+              className='textBar'
+              value={value}
+              handleChange={handleChange}
+            />
+            <div className='button notice' onClick={skip}>
+              Skip
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+        {randomizedWord && displayed === 'FEEDBACK' ? (
+          <SecretWordFeedback
+            randomizedWord={randomizedWord}
+            randomizeWord={randomizeWord}
+            handleEnter={handleEnter}
           />
-          <div className='button notice' onClick={skip}>
-            Skip
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
-      {randomizedWord && displayed === 'FEEDBACK' ? (
-        <SecretWordFeedback
-          randomizedWord={randomizedWord}
-          randomizeWord={randomizeWord}
-          handleEnter={handleEnter}
-        />
-      ) : (
-        <></>
-      )}
-      <div
-        className='button info mini'
-        onClick={() => setVisibleInfoWidget(true)}
-      >
-        ?
-      </div>
-      <h3>Combo: {points}</h3>
+        ) : (
+          <></>
+        )}
+        <div
+          className='button info mini'
+          onClick={() => setVisibleInfoWidget(true)}
+        >
+          ?
+        </div>
+        <h3>Combo: {points}</h3>
+      </main>
       <Footer />
 
       {visibleInfoWidget ? (

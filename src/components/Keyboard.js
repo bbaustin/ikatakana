@@ -1,7 +1,7 @@
 import React from 'react'
 import { KATAKANA_ALPHABET } from '../assets/constants'
 
-const Keyboard = (props) => {
+const Keyboard = () => {
   let katakanaAlphabet = { KATAKANA_ALPHABET }
   return (
     <div className='keyboard'>
